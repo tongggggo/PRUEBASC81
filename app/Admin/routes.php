@@ -1,10 +1,12 @@
 <?php
 
+use App\Admin\Controllers\facturaDetalleController;
 use App\Admin\Controllers\ProductsController;
 use App\Admin\Controllers\VeterinariosController;
 use App\Admin\Controllers\MascotasController;
 use App\Admin\Controllers\PropietarioController;
 use App\Admin\Controllers\CitaController;
+use App\Admin\Controllers\VentasController;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
@@ -25,5 +27,7 @@ Route::group([
     $router->resource('mascotas', MascotasController::class);
     $router->resource('propietarios', PropietarioController::class);
     $router->resource('citas', CitaController::class);
+    $router->resource('ventas', VentasController::class);
+    $router->resource('factura-detalles', facturaDetalleController::class);
 
 });
