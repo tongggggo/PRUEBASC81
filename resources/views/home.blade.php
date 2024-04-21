@@ -35,15 +35,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     } elseif (isset($_GET['btnMascotas'])) {
         $consulta = "SELECT COUNT(*) as total FROM mascotas";
     } elseif (isset($_GET['btnPropietarios'])) {
-        $consulta = "SELECT COUNT(*) as total FROM propietarios";
+        $consulta = "SELECT COUNT(*) as total FROM propietario";
     } elseif (isset($_GET['btnVeterinarios'])) {
         $consulta = "SELECT COUNT(*) as total FROM veterinarios";
     } elseif (isset($_GET['btnCitas'])) {
-        $consulta = "SELECT COUNT(*) as total FROM citas";
+        $consulta = "SELECT COUNT(*) as total FROM cita";
     } elseif (isset($_GET['btnVentas'])) {
         $consulta = "SELECT COUNT(*) as total FROM ventas";
     } elseif (isset($_GET['btnDetalle'])) {
-        $consulta = "SELECT COUNT(*) as total FROM detalle";
+        $consulta = "SELECT COUNT(*) as total FROM facturadetalle";
     }
 
     // Ejecutar la consulta si se ha definido
